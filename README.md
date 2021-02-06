@@ -10,5 +10,5 @@
 ## Usage
 ```
 ▶ Run python manage.py runserver 0.0.0.0:8000 or python3 manage.py runserver 0.0.0.0:8000
-▶ Navigate http://localhost:8000 or http://{{ip_addr}}:8000
+▶ Open http://localhost:8000 or http://{{ip_addr}}:8000 in browser
 ```
