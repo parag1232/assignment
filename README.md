@@ -16,5 +16,5 @@
 
 ## Screenshots
 ```
-<p align="left"><img src="https://github.com/parag1232/assignment/blob/main/screenshot1.png?raw=true" /></p>
+![Alt text](https://github.com/parag1232/assignment/blob/main/screenshot1.png?raw=true)
 ```
