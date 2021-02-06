@@ -1,7 +1,7 @@
 ## Installation
 
 ```
-▶ git clone 
+▶ git clone https://github.com/parag1232/assignment.git
 ▶ cd assignment
 ▶ pip install -r requirements.txt
 
@@ -10,6 +10,6 @@
 ## Usage
 ```
 ▶ cd assignment
-▶ Run <b>python manage.py runserver 0.0.0.0:8000</b>
-▶ Navigate <b>http://localhost:8000</b>
+▶ Run python manage.py runserver 0.0.0.0:8000
+▶ Navigate http://localhost:8000
 ```
