@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <form action="{% url 'index' %}" method="post" id = "uploadForm" name="uploadForm" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    
+                    <div class="col-3" style="align-content: center;">
+            <div class="custom-file">
+                <input type="file" class="d-flex justify-content-center" id="validatedCustomFile" name="xl" required>
+                <label class="custom-file-label" for="validatedCustomFile">Upload Excel file Containing Addresses</label>
+                 
+            </div>
+            
+            </div>
+            <div class="col-1"><button class="btn btn-primary" type="submit">Upload File</button> </div>
+            </div>
+            
+            </form>
+        
+        
+            &nbsp;&nbsp;
+            <div class="container-fluid">
+                <div id="myDiv" class="container" style="display:none;">
+                    <img id="loading-image" src="{% static 'geolocator/gif/ajax-loader.gif' %}" class="loader" style="display:none;"/>
+                </div>
+        <table class="table table table-striped table-bordered dt-responsive nowrap" id="geotable" >
+            <thead>
+                <tr>
+                    <th>Address</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    </tr>
+            </thead>
+
+        </table>
+    </div>
+    <div class="container">
+        <div class="alert alert-danger alert-dismissible" id="error" style="display: none;">
+          
+        </div>
+      </div>
+      
+        
+
+{% endblock %}    

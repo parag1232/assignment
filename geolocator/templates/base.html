@@ -1,0 +1,46 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Geolocator App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'geolocator/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'geolocator/css/datatables.css' %}">
+    <link rel="stylesheet" href="{% static 'geolocator/css/buttons.datatables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'geolocator/css/index.css' %}">
+    
+</head>
+  <body>
+    <!-- <div id="myDiv" style="align-content: center;" class="container">
+      <img id="loading-image" src="{% static 'geolocator/gif/ajax-loader.gif' %}" class="loader"/>
+  </div> -->
+    <div>
+
+      <div class="container-fluid">
+            
+        <div class="row">
+            <div class="col-lg">
+                
+        <h1 style="text-align: center;">Geolocator App</h1></div></div></div>
+        &nbsp;&nbsp;
+    {% block content %}
+    {% endblock %}
+     </div> 
+    <script src="{% static 'geolocator/js/jquery.min.js' %}" ></script>
+    <script src="{% static 'geolocator/js/popper.min.js' %}" ></script>
+    <script src="{% static 'geolocator/js/bootstrap.js' %}" ></script>
+    <script src="{% static 'geolocator/js/datatables.js' %}" ></script>
+    <script src="{% static 'geolocator/js/buttons.datatables.min.js' %}" ></script>
+    <script src="{% static 'geolocator/js/html5.buttons.js' %}" ></script>
+    <script src="{% static 'geolocator/js/jszip.min.js' %}" ></script>
+    <script src="{% static 'geolocator/js/pdfmake.min.js' %}" ></script>
+    <script src="{% static 'geolocator/js/index.js' %}" ></script>
+  </body>
+  <script>
+
+</script>
+</html>
